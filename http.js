@@ -68,3 +68,34 @@ module.exports = {
   apiGet: apiGet,
   apiPost: apiPost,
 }
+
+/*
+使用方法
+var http = require('../../utils/http.js')
+
+http.apiPost('wxs/user/info', {}, function(res) {
+  console.log(res)
+  if (res.code == 0) {
+    
+  } else {
+    wx.showToast({
+      title: '请求错误',
+      icon: 'none',
+      duration: 1000
+    });
+  }
+},true)
+
+http.apiGet('coupons/my-coupons', {}, function(res) {
+  console.log(res)
+  if (res.code == 0) {
+    
+  } else {
+    wx.showToast({
+      title: '请求错误',
+      icon: 'none',
+      duration: 1000
+    });
+  }
+},true)
+ */
